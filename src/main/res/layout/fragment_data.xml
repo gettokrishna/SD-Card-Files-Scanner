@@ -1,0 +1,48 @@
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       android:id="@+id/baseDataLayout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+       android:orientation="vertical">
+
+   <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+   <TextView
+        android:id="@+id/dataText1"
+        android:paddingRight="2dp"
+        android:gravity="left"
+        android:layout_height="20dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.80"
+        android:ellipsize="end"
+        android:text="SampleTextFile.png"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:textSize="14sp"
+        android:textColor="@color/darker_gray" />
+   
+    
+    <TextView
+        android:id="@+id/dataText2"
+        android:paddingRight="2dp"
+        android:gravity="right"
+        android:layout_width="0dp"
+        android:layout_weight="0.20"
+        android:layout_height="20dp"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:typeface="normal"
+        android:text="xxx MB"
+        android:textColor="@color/darker_gray" />
+    </LinearLayout>
+    
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/header" />
+</LinearLayout>
+    

@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg"
+     >
+    
+    <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        >
+    <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         android:orientation="vertical" >
+    <TextView
+         android:id="@+id/file_stats_label"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/border_with_full_shadow"
+         android:paddingLeft="4dp"
+         android:paddingRight="4dp"
+         android:textColor="@color/header"
+         android:gravity="center_horizontal|center_vertical"
+         android:textSize="16sp"
+         android:typeface="normal"
+         android:textStyle="bold"
+        android:layout_marginBottom="3dp"
+         android:text="@string/stats_label" />"
+
+    <TextView
+         android:id="@+id/error_msg"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_marginBottom="10dp"
+         android:background="@drawable/border_with_full_shadow"
+         android:paddingLeft="4dp"
+         android:paddingRight="4dp"
+         android:textColor="@color/header"
+         android:gravity="center_horizontal|center_vertical"
+         android:textSize="18sp"
+         android:textStyle="bold"
+         android:typeface="normal"
+         android:text="@string/stats_label"
+         android:visibility="gone" />"
+    
+    <TextView
+         android:id="@+id/top_files_label"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:textColor="@android:color/black"
+         android:paddingLeft="4dp"
+         android:paddingRight="4dp"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         android:typeface="normal"
+         android:text="@string/top_files_label" />
+    
+    <LinearLayout
+       android:id="@+id/top_ten_Layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/border_with_full_shadow"
+       android:orientation="vertical"
+       android:paddingLeft="8dp"
+       android:paddingRight="8dp"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+	   >
+    </LinearLayout>
+    
+    
+    <TextView
+         android:id="@+id/average_file_size"
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:background="@drawable/border_with_full_shadow"
+         android:paddingLeft="8dp"
+         android:paddingRight="8dp"
+         android:textSize="16sp"
+         android:gravity="center_vertical"
+         android:textStyle="bold"
+         android:typeface="normal"
+         android:textColor="@color/header"
+         android:layout_marginTop="20dp"
+      />
+    
+    <TextView
+         android:id="@+id/freq_label"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="20dp"
+         android:textSize="16sp"
+         android:paddingLeft="4dp"
+         android:paddingRight="4dp"
+         android:textStyle="bold"
+         android:typeface="normal"
+         android:textColor="@android:color/black"
+         android:text="@string/freq_files_label" />
+    
+    <LinearLayout 
+       android:id="@+id/freq_five_Layout"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       android:paddingLeft="8dp"
+       android:paddingRight="8dp"
+       android:background="@drawable/border_with_full_shadow"
+       android:layout_marginTop="10dp"
+       android:layout_marginBottom="10dp"
+       >
+    </LinearLayout>
+  </LinearLayout>    
+ </ScrollView>
+</LinearLayout>
